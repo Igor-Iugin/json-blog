@@ -1,0 +1,28 @@
+name: npm test
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number || github.sha }}
+  cancel-in-progress: true
+
+jobs:
+  test_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⚙️️ Setup
+      - uses: actions/checkout@v4.2.1
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'pnpm'
+          cache-dependency-path: '**/pnpm-lock.yaml'
+
+      - name: ♻ Install dependencies
+        run: pnpm install
+
+      - name: 🩺 Lint types & styles
+        run: pnpm lint:CI
+
