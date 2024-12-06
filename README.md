@@ -1,34 +1,19 @@
-# Mantine Vite template
+# JSON Blog
 
-## Features
+Проект для проверки скорости разработки лёгких проектов на привычном стеке.
 
-This template comes with the following features:
+Цель проекта: Разработать простой блог основанный на api [JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
+## Стек
+
 - [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+- [React](https://react.dev/)
+- [React Router](https://reactrouter.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Mantine UI](https://react-hook-form.com/)
 
-## npm scripts
+### Почему нет {N}?
 
-## Build and dev scripts
-
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
-
-### Testing scripts
-
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `vitest` – runs vitest tests
-- `vitest:watch` – starts vitest watch
-- `test` – runs `vitest`, `prettier:check`, `lint` and `typecheck` scripts
-
-### Other scripts
-
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+- Storybook - Трата времени. У меня нет команды и цели показать чем я умею пользоваться (почти :3)
+- Jest - лень
+- Prettier - Eslint делаёт всё то же самое, не вижу причин использовать
